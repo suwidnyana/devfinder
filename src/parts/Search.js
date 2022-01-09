@@ -1,9 +1,10 @@
 import React from "react";
 import { useState } from "react";
+import icon_search from "../assets/images/icon-search.svg"
 
 function Searchbar(props) {
-  const { 
-    onSearch 
+  const {
+    onSearch
   } = props;
 
   const [searchText, setSearchText] = useState('')
@@ -14,14 +15,14 @@ function Searchbar(props) {
   }
 
   const handleEnterKeyPressed = (e) => {
-    if(e.key=== 'Enter') {
+    if (e.key === 'Enter') {
       onSearch(searchText)
     }
   }
 
   return (
     <div>
-      <div className="control"> 
+      <div className="control">
         <input
           className="input"
           onChange={handleInput}

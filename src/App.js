@@ -1,8 +1,11 @@
-import {useState } from 'react';
+import { useState } from 'react';
 import './App.css'
 import Search from './parts/Search'
 import api from "./parts/api";
 import Card from './parts/Card'
+import Header from './parts/Header';
+
+
 function App() {
 
   const [state, setState] = useState({
@@ -20,15 +23,10 @@ function App() {
   };
 
   return (
-    <div className="user-form">
-      <div>
-        <h2>
-          Github User Search App
-        </h2>
-        <Search onSearch={onSearch} className="" />
-        <Card results={state.results}/>
-      </div>
-    </div>
+    <>
+      <Header text="devfinder" placeholder="search here" />
+     
+    </>
   );
 }
 
