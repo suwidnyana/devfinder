@@ -4,7 +4,7 @@ import Search from './parts/Search'
 import api from "./parts/api";
 import Card from './parts/Card'
 import Header from './parts/Header';
-
+import { ThemeState } from "./context/ThemeContext"
 
 function App() {
 
@@ -23,10 +23,9 @@ function App() {
   };
 
   return (
-    <>
+    <ThemeState>
       <Header text="devfinder" placeholder="search here" />
-     
-    </>
+    </ThemeState>
   );
 }
 

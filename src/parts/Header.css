@@ -1,21 +1,7 @@
 header {
+  background: var(--body-background);
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 36px;
-}
-
-.theme-switcher {
-  font-size: 1em;
-  font-weight: 700;
-  line-height: 0;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  border-color: salmon;
-}
-
-.theme-switcher img {
-  margin-left: 16px;
 }
